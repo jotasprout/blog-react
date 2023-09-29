@@ -1,12 +1,32 @@
 import Home from "./comps/Home";
+import Blog from "./comps/Blog";
+import Resume from "./comps/Resume";
+import Header from "./comps/Header";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserHistory } from "history";
+
+
 
 function App() {
   return (
     <div className="App">
-        <h1>Personal Project #5,348</h1>
-        <Home />
+
+        <Router>
+            <Header />
+
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/resume' element={<Resume />} />
+                <Route path='/blog' element={<Blog />} />
+            </Routes>                
+        </Router>
+
     </div>
   );
 }
+
+export const history = createBrowserHistory({
+    basename: process.env.PUBLIC_URL
+});
 
 export default App;
