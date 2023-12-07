@@ -1,7 +1,7 @@
 export default function Resume(){
     return (
         <div>
-            This is my super impressive resume.
+            Behold: My super impressive resume!
         </div>
     )
 }
