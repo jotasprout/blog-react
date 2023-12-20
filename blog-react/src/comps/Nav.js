@@ -21,6 +21,11 @@ export default function Nav() {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
+                            <NavLink className='nav-link' to='/portfolio'>
+                                Portfolio
+                            </NavLink>
+                        </li>
+                        <li className='nav-item'>
                             <NavLink className='nav-link' to='/resume'>
                                 Resume
                             </NavLink>
