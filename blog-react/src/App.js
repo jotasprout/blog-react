@@ -1,4 +1,5 @@
 import Home from "./comps/Home";
+import PortList from "./comps/portfolio/PortList";
 import Blog from "./comps/Blog";
 import Resume from "./comps/Resume";
 import Header from "./comps/Header";
@@ -16,6 +17,7 @@ function App() {
 
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/portfolio' element={<PortList />} />
                 <Route path='/resume' element={<Resume />} />
                 <Route path='/blog' element={<Blog />} />
             </Routes>                
