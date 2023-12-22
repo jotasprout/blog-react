@@ -8,15 +8,80 @@ export default function PortList(){
     let print = [];
     let jobHelpers = [];
     let video = [];
+    let animation = [];
+    let vyond = [];
+    let motionGraphics = [];
     let gamification = [];
     let flash = [];
     let webDev = [];
 
     return(
-        <div>
+        <div className="mb-3">
+            <h1 className="mb-3">items</h1>
+            <ul class="nav nav-pills mb-3">
+                <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/items">All</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/storyline" state={{storylineList:{storylineList}}}>Storyline</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/camtasia" state={{camtasiaList:{camtasiaList}}}>Camtasia</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/print" state={{printList:{printList}}}>Print</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/jobHelpers" state={{jobHelpersList:{jobHelpersList}}}>Job Helpers</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/video" state={{videoList:{videoList}}}>Video</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/animation" state={{huntingHornList:{huntingHornList}}}>Hunting Horn</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/vyond" state={{lanceList:{lanceList}}}>Lance</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/motionGraphics" state={{motionGraphicsList:{motionGraphicsList}}}>Motion Graphics</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/gamification" state={{switchAxeList:{switchAxeList}}}>Switch Axe</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/flash" state={{chargeBladeList:{chargeBladeList}}}>Charge Blade</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/webDev" state={{insectGlaiveList:{insectGlaiveList}}}>Insect Glaive</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/healthCare" state={{lightBowgunList:{lightBowgunList}}}>Light Bowgun</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/simulation" state={{heavyBowgunList:{heavyBowgunList}}}>Heavy Bowgun</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/afterEffects" state={{bowList:{bowList}}}>Bow</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/illustrator" state={{heavyBowgunList:{heavyBowgunList}}}>Heavy Bowgun</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/items/onboarding" state={{bowList:{bowList}}}>Bow</Link>
+                </li>
+            </ul>
             <p>Not here. You're looking for my portfolio.</p>
-            <PortItem />
+
+        
+            <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
+                {items.map(item => {
+                    return <PortItem item={item} key={item.id}/>
+                })}
+            </div>
+            
         </div>
+
     );
 
 }
