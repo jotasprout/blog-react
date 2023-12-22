@@ -1,19 +1,40 @@
-// import { Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import PortItem from "./PortItem";
-export default function PortList(){
 
-    let storyline = [];
-    let camtasia = [];
-    let print = [];
-    let jobHelpers = [];
-    let video = [];
-    let animation = [];
-    let vyond = [];
-    let motionGraphics = [];
-    let gamification = [];
-    let flash = [];
-    let webDev = [];
+export default function PortList({item}){
+
+    const [items, setItems] = useState([]);
+    useEffect(() => {
+        async function getData() {
+            const response = await fetch('https://mhw-db.com/weapons');
+            if (!response.ok){
+                throw new Error(
+                    `This is an HTTP error: The status is ${response.status}`
+                );
+            }
+            let actualData = await response.json();
+            setItems(actualData)
+        }
+        getData()
+    }, []);
+
+    let storylineList = [];
+    let camtasiaList = [];
+    let printList = [];
+    let jobHelpersList = [];
+    let videoList = [];
+    let animationList = [];
+    let vyondList = [];
+    let motionGraphicsList = [];
+    let gamificationList = [];
+    let flashList = [];
+    let webDevList = [];
+    let illustratorList = [];
+    let simulationList = [];
+    let onboardingList = [];
+    let afterEffectsList = [];
+    let healthCareList = [];
 
     return(
         <div className="mb-3">
