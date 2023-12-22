@@ -38,37 +38,37 @@ export default function PortList(){
                 <Link class="nav-link" to="/items/video" state={{videoList:{videoList}}}>Video</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/animation" state={{huntingHornList:{huntingHornList}}}>Hunting Horn</Link>
+                <Link class="nav-link" to="/items/animation" state={{animationList:{animationList}}}>animation</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/vyond" state={{lanceList:{lanceList}}}>Lance</Link>
+                <Link class="nav-link" to="/items/vyond" state={{vyondList:{vyondList}}}>vyond</Link>
                 </li>
                 <li class="nav-item">
                 <Link class="nav-link" to="/items/motionGraphics" state={{motionGraphicsList:{motionGraphicsList}}}>Motion Graphics</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/gamification" state={{switchAxeList:{switchAxeList}}}>Switch Axe</Link>
+                <Link class="nav-link" to="/items/gamification" state={{gamificationList:{gamificationList}}}>gamification</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/flash" state={{chargeBladeList:{chargeBladeList}}}>Charge Blade</Link>
+                <Link class="nav-link" to="/items/flash" state={{flashList:{flashList}}}>flash</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/webDev" state={{insectGlaiveList:{insectGlaiveList}}}>Insect Glaive</Link>
+                <Link class="nav-link" to="/items/webDev" state={{webDevList:{webDevList}}}>webDev</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/healthCare" state={{lightBowgunList:{lightBowgunList}}}>Light Bowgun</Link>
+                <Link class="nav-link" to="/items/healthCare" state={{healthCareList:{healthCareList}}}>healthCare</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/simulation" state={{heavyBowgunList:{heavyBowgunList}}}>Heavy Bowgun</Link>
+                <Link class="nav-link" to="/items/simulation" state={{simulationList:{simulationList}}}>simulation</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/afterEffects" state={{bowList:{bowList}}}>Bow</Link>
+                <Link class="nav-link" to="/items/afterEffects" state={{afterEffectsList:{afterEffectsList}}}>afterEffects</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/illustrator" state={{heavyBowgunList:{heavyBowgunList}}}>Heavy Bowgun</Link>
+                <Link class="nav-link" to="/items/illustrator" state={{illustratorList:{illustratorList}}}>illustrator</Link>
                 </li>
                 <li class="nav-item">
-                <Link class="nav-link" to="/items/onboarding" state={{bowList:{bowList}}}>Bow</Link>
+                <Link class="nav-link" to="/items/onboarding" state={{onboardingList:{onboardingList}}}>onboarding</Link>
                 </li>
             </ul>
             <p>Not here. You're looking for my portfolio.</p>
