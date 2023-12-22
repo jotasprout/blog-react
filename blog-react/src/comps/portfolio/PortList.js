@@ -71,8 +71,7 @@ export default function PortList(){
                 <Link class="nav-link" to="/items/onboarding" state={{onboardingList:{onboardingList}}}>onboarding</Link>
                 </li>
             </ul>
-            <p>Not here. You're looking for my portfolio.</p>
-
+            <p>Not here. You're looking for my <a href={`https://www.roxorsoxor.com/port.html`} target="_blank">Portfolio</a>.</p>
         
             <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
                 {items.map(item => {
